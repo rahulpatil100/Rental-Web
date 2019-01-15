@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://localhost:2657/WebSite6/images/FaceBookLogo-small.jpg</ImageUrl>
+    <NavigateUrl>http://www.facebook.com</NavigateUrl>
+    <AlternateText>
+     Facebook
+    </AlternateText>
+    <Impressions>10</Impressions>
+    <Keyword>ad1</Keyword>
+  </Ad>
+
+
+<Ad>
+  <ImageUrl>http://localhost:2657/WebSite6/images/download.png</ImageUrl>
+  <NavigateUrl>http://www.twitter.com</NavigateUrl>
+  <AlternateText>
+  Twiiter
+  </AlternateText>
+  <Impressions>10</Impressions>
+  <Keyword>ad2</Keyword>
+</Ad>
+
+  <Ad>
+    <ImageUrl>http://localhost:2657/WebSite6/images/youtube.png</ImageUrl>
+    <NavigateUrl>http://www.youtube.com</NavigateUrl>
+    <AlternateText>
+    Youtube
+    </AlternateText>
+    <Impressions>10</Impressions>
+    <Keyword>ad3</Keyword>
+  </Ad>
+</Advertisements>

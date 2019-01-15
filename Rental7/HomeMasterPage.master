@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMasterPage.master.cs" Inherits="HomeMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Renatl shop</title>
+<link rel="stylesheet" type="text/css" href="Styles/site.css"/>
+   
+    <style type="text/css">
+        .style1
+        {
+            width: 12px;
+            height: 12px;
+        }
+        #sidebar
+        {
+            z-index: 1;
+            left: 1013px;
+            top: 395px;
+            position: absolute;
+            height: 442px;
+            width: 487px;
+        }
+    </style>
+   
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Wrapper"></div>
+    <div id ="banner">
+    </div>
+    
+    <div id="navigation">
+    <ul id="nav">
+
+
+     <li><asp:HyperLink runat="server" ID="lnkHome" NavigateUrl="~/Default.aspx"> Home</asp:HyperLink></li>
+         <li><asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Feedback.aspx">Feedback</asp:HyperLink></li>
+          <li><asp:HyperLink runat="server" ID="HyperLink3" NavigateUrl="~/Enquiry.aspx">Enquiry</asp:HyperLink></li>
+         <li><asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Aboutus.aspx">AboutUs</asp:HyperLink></li>
+          </ul>
+          </div>
+          
+    <div id="content_area">
+        <asp:Panel ID="Panel1" runat="server" 
+            
+            
+            
+            style="z-index: 1; left: 25px; top: 320px; position: absolute; height: 40px; width: 851px">
+        
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          
+        </asp:ContentPlaceHolder>
+                <br/>
+
+                    <br/>
+</asp:Panel>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Search " 
+            ForeColor="White"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+        <img alt="" class="style1" runat="server" src="images/a6_1.gif"/>&nbsp;&nbsp; &nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Rental Category" 
+            ForeColor="White"></asp:Label>
+        <asp:DropDownList ID="ddlcategory" runat="server" ValidationGroup="searchgroup">
+            <asp:ListItem>--Select--</asp:ListItem>
+            <asp:ListItem>Computer</asp:ListItem>
+            <asp:ListItem>Airconditoner</asp:ListItem>
+            <asp:ListItem>HomeAppliances</asp:ListItem>
+        </asp:DropDownList>
+        &nbsp;<asp:ImageButton ID="btnSearch" runat="server" 
+            ImageUrl="~/images/searchNow_btn.gif" onclick="btnSearch_Click" />
+    <br/>
+    
+      
+    &nbsp;</div>
+    <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile.xml" 
+         
+         style="z-index: 1; left: 129px; top: 1219px; position: absolute; height: 10px; width: 17px; right: 899px;" />
+
+     <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile.xml" 
+            style="z-index: 1; left: 178px; top: 1218px; position: absolute; height: 13px; width: 26px"  />
+        <asp:AdRotator ID="AdRotator3" runat="server" AdvertisementFile="~/XMLFile.xml" 
+            style="z-index: 1; left: 218px; top: 1218px; position: absolute; height: 8px; width: 32px" />
+
+    <div id="sidebar">
+
+
+    </div>
+
+
+       <div id="footer">
+
+       <tr>
+           <td style="width: 977px; height: 20px">
+                    <center>
+                        <a href="#" onclick="history.go(-1)"><b>Back</b></a>
+
+                    </center>
+                </td>
+            </tr>
+  <p style="font-size: large; font-weight: bold; color: #FF0000; text-decoration: blink;"  ><marquee>Copy Right@ 2016 Reserved at Tech
+  </marquee></p>
+    </div>
+    </form>
+    <p style="font-size: large; font-weight: bold; color: #FF0000; text-decoration: blink">
+        &nbsp;</p>
+</body>
+</html>
+
